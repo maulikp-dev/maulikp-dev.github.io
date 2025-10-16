@@ -4,8 +4,8 @@ import createMDX from '@next/mdx';
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
-    output: 'export', // enables static export
-  images: { unoptimized: true }, // prevents Next image optimization (needs server)
+  output: 'export', // 🔑 KEEP THIS: Enables static HTML export
+  images: { unoptimized: true }, // KEEP THIS: Disables Image Optimization which needs a server
   basePath: '', // keep empty for personal site, or '/repo-name' for project site
   assetPrefix: '', // same rule as above
 };

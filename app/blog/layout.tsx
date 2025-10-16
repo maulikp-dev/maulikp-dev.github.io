@@ -3,6 +3,8 @@ import { TextMorph } from '@/components/ui/text-morph'
 import { ScrollProgress } from '@/components/ui/scroll-progress'
 import { useEffect, useState } from 'react'
 
+export const dynamic = "force-static";
+
 function CopyButton() {
   const [text, setText] = useState('Copy')
   const currentUrl = typeof window !== 'undefined' ? window.location.href : ''

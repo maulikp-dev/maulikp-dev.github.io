@@ -1,0 +1,11 @@
+- name: Build with Next.js
+  run: npm run build
+  # Note: Your package.json should have "build": "next build"
+
+# 🔑 ADD THIS STEP: Prevents Jekyll from ignoring the _next/ folder
+- name: Create .nojekyll file
+  run: touch out/.nojekyll
+
+# Configure Pages...
+- name: Setup Pages
+  uses: actions/configure-pages@v5
